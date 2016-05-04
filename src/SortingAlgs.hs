@@ -1,5 +1,5 @@
 module SortingAlgs
-( bubbleSort, sorted ) where
+( bubbleSort, selectSort, sorted ) where
 
   findMax :: (Ord a) => [a] -> a
   findMax [] = error "There is no maximum in an empty list!"
