@@ -28,4 +28,4 @@ module SortingAlgs
     where
       indexedLst = zip lst [0,1..]
       (minElem, minElemIdx) = minimum indexedLst
-      (restList, _) = unzip(filter(\(_, idx) -> idx /= minElemIdx) indexedLst)
+      (restList, _) = unzip . filter(\(_, idx) -> idx /= minElemIdx) $ indexedLst
